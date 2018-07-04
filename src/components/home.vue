@@ -1,22 +1,24 @@
 <template>
         <div class="app-wrapper container-fluid">
             <NavBar/>
-            <parallax>
-                <img src="../assets/bg-header.jpg" alt="very cool bg">
-            </parallax>
-            <BackgroundCover/>
+            <ContentHeader/>
+            <Gallery/>
+            <!-- <BackgroundCover/> -->
         </div>
 </template>
 
 <script>
 import NavBar from './navbar'
 import BackgroundCover from './background'
-import Parallax from 'vue-parallaxy'
+import ContentHeader from './contentHeader'
+import Gallery from './gallery'
 export default {
   name: 'home',
   components: {
     NavBar,
     BackgroundCover,
+    ContentHeader,
+    Gallery
   }
 }
 </script>
@@ -24,8 +26,9 @@ export default {
 <style lang="scss" scoped>
 .app-wrapper{
     padding:0;
-    height:100vh;
-    background-image:url('../assets/bg-header.jpg');
-    background-position: center 0px;
+    height:1500px;
+    .md-content {
+        overflow: auto;
+    }
 }
 </style>

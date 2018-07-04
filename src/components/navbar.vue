@@ -31,18 +31,30 @@ export default {
     //   background:black;
       z-index:99;
       width:100%;
+        background:white;
   }
 .nav-wrapper{
   max-width:1440px;
   margin-left:auto;
   margin-right:auto;
 //   border:1px solid gray;
+
   z-index:10;
   .nav{
         .logo {
             float:left;
             width: 50%;
-            text-align: left;
+            vertical-align: middle;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: left;
             a{
                 img{
                     max-height: 50px;
@@ -61,9 +73,14 @@ export default {
                 padding:0;
                 li{
                     display: inline-block;
-                    padding: 30px 0;
+                    padding: 30px 15px;
                     vertical-align: middle;
-                    color:white;
+                    // transition: all .5s;
+                }
+                li:hover{
+                    cursor: pointer;
+                    // background:green;
+                    color: rgb(0, 183, 255);
                 }
             }
         }

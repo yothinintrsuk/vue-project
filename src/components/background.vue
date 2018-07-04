@@ -15,7 +15,7 @@ export default {
         position:absolute;
             background:rgba(0,0,0,.5);
             height:inherit;
-            width:100vw;
+            width:100%;
             z-index:1;
             top:0;
             left:0;
